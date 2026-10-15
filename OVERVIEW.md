@@ -1,26 +1,5 @@
-<!--
-OVERVIEW.md is required to list your plugin in the registry. Keep it beside
-paseo-plugin.json in your repository at the pinned commit and in your npm package.
-Replace this comment with useful facts before publishing.
+Compact adds a Compact button to the composer of every agent that has a workspace. Clicking it sends the `/compact` command to that agent, exactly as if you had typed it, so the provider runs its own compaction and the context meter drops.
 
-This overview is for people choosing a plugin in Paseo, on the plugin page under
-its install command. README assumes a GitHub audience and includes technical
-details, installation instructions, and badges. Long, AI-generated READMEs leave
-people reading past that material to understand what the plugin does.
+The button disables itself while the agent has a turn in flight, because a message sent during a compaction can cancel it, and re-enables when the agent goes idle. It follows the agent directory live: new agents get a button, removed agents lose theirs.
 
-Write these parts in order, including only what helps someone decide to install:
-
-1. Describe what your plugin is and does in plain terms first.
-2. Explain how it works only when it is not obvious.
-3. Explain setup when needed: settings, accounts, tokens, providers, tools, or
-   other plugins. Include applicable daemon version and operating system
-   requirements. Setup guidance is allowed; installation instructions are not.
-4. Explain capabilities and settings worth understanding, what each option does,
-   what the plugin reads or sends and where, permissions, and known limits.
-
-Length follows complexity; a theme needs one paragraph. Choose headings only
-when they help. Use sentence case and plain factual language, with no em dashes.
-Omit installation commands, badges, changelog, contributing or license sections,
-marketing, and unsupported claims. Avoid implementation filler such as empty
-cleanup functions, theme-token field lists, or lists of absent features.
--->
+No settings and no extra permissions. Verified with Claude Code and Codex agents.

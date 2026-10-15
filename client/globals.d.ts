@@ -17,5 +17,4 @@ declare var AbortController: {
 
 declare var console: {
   error(...data: unknown[]): void;
-  log(...data: unknown[]): void;
 };
