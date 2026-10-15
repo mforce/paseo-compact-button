@@ -1,0 +1,7 @@
+{
+  "id": "paseo-compact-button",
+  "description": "Adds a Compact button to each agent composer that sends /compact to that agent.",
+  "requirements": {
+    "paseo": ">=0.11.2"
+  }
+}
