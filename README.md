@@ -25,8 +25,8 @@ test agent, 21,706 to 6,483 on a Codex test agent).
 paseo plugin install github.com/mforce/paseo-compact-button
 ```
 
-Requires a Paseo daemon with plugin source installation (v0.8.0 or later). No
-settings and no extra permissions.
+Requires a Paseo daemon with plugin source installation; this plugin needs
+Paseo 0.11.2 or later. No settings and no extra permissions.
 
 ## Development
 
